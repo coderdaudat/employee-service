@@ -1,4 +1,4 @@
-package pl.piomin.services.employeeservice;
+package pl.piomin.services.employee;
 
 import org.junit.Test;
 import org.junit.runner.RunWith;

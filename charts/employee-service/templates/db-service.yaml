@@ -1,0 +1,19 @@
+kind: Service
+apiVersion: v1
+metadata:
+ name: mongo
+spec:
+ ports:
+ - port: 27017
+   targetPort: 33041
+
+---
+kind: Endpoints
+apiVersion: v1
+metadata:
+ name: mongo
+subsets:
+ - addresses:
+     - ip: 54.89.243.101
+   ports:
+     - port: 33041
