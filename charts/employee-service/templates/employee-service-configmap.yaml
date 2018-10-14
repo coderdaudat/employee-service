@@ -4,7 +4,7 @@ metadata:
   name: employee-service
   labels:
     app: employee-service
-  namespace: default
+  namespace: {{ .Release.Namespace }}
 data:
   application.yml: |-
     endpoints.trace.sensitive: false
