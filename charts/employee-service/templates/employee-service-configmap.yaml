@@ -4,7 +4,6 @@ metadata:
   name: employee-service
   labels:
     app: employee-service
-  namespace: jx-staging
 data:
   application.yml: |-
 #    endpoints.trace.sensitive: false
