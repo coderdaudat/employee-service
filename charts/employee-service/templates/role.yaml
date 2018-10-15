@@ -4,51 +4,6 @@ metadata:
   name: {{ .Chart.Name }}
   namespace: {{ .Release.Namespace }}
 rules:
-- apiGroups:
-  - extensions
-  resources:
-  - ingresses
-  verbs:
-  - get
-  - list
-  - watch
-  - patch
-  - create
-  - update
-  - delete
-- apiGroups:
-  - ""
-  resources:
-  - configmaps
-  - services
-  - endpoints
-  - pods
-  - configmaps
-  verbs:
-  - get
-  - list
-  - watch
-  - patch
-  - update
-- apiGroups:
-  - apps
-  resources:
-  - deployments
-  verbs:
-  - get
-  - list
-  - watch
-  - patch
-  - update
-- apiGroups:
-  - ""
-  resources:
-  - routes
-  verbs:
-  - get
-  - list
-  - watch
-  - patch
-  - create
-  - update
-  - delete
+- apiGroups: ["extensions", "apps", "configmaps", "services", "endpoints", "pods"]
+  resources: ["deployments", "ingresses", "routes"]
+  verbs: ["get", "list", "watch", "create", "update", "patch", "delete"]

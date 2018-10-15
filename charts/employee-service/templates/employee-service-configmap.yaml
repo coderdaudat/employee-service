@@ -7,9 +7,9 @@ metadata:
   namespace: jx-staging
 data:
   application.yml: |-
-    endpoints.trace.sensitive: false
-    backend:
-      ribbon:
-        eureka.enabled: false
-        client.enabled: true
-        ServerListRefreshInterval: 15000
+#    endpoints.trace.sensitive: false
+#    backend:
+#      ribbon:
+#        eureka.enabled: false
+#        client.enabled: true
+#        ServerListRefreshInterval: 15000
