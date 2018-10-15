@@ -1,9 +1,7 @@
 kind: ConfigMap
 apiVersion: v1
 metadata:
-  name: employee-service
-  labels:
-    app: employee-service
+  name: {{ .Values.service.name }}
 data:
   application.yml: |-
 #    endpoints.trace.sensitive: false
