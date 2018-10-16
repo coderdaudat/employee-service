@@ -46,9 +46,10 @@ public class ApplicationConfig {
 
     @Bean
     public ConnectionFactory connectionFactory() {
-        CachingConnectionFactory connectionFactory = new CachingConnectionFactory("localhost");
+        CachingConnectionFactory connectionFactory = new CachingConnectionFactory();
         connectionFactory.setUsername("rabbit");
         connectionFactory.setPassword("i7VpLzHGyGK6");
+        connectionFactory.setAddresses("35.198.209.3:5672,35.198.209.3:5671,35.198.209.3:25672,35.198.209.3:4369,35.198.209.3:15672");
         return connectionFactory;
     }
 
