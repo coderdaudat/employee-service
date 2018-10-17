@@ -38,10 +38,18 @@ public class DemoApplication {
 	}
 
 //	@Bean
-//	public io.opentracing.Tracer getTracer() throws ConfigurationException {
+//	public io.opentracing.Tracer jaegerTracer() {
+//		Configuration config = Configuration.fromEnv();
+//		config = new Configuration("employee-service");
+//		Configuration.SenderConfiguration.Builder builder;
 //
-//		return new io.opentracing.Tracer().;
+//		System.out.println("Config_Host: " + config.getReporter().getSenderConfiguration().getAgentHost());
+//		System.out.println("Config_Port: " + config.getReporter().getSenderConfiguration().getAgentPort());
+//		System.out.println("Sampler_Host_Port: " + config.getSampler().getManagerHostPort());
+//
+//		return config.getTracer();
 //	}
+
 
 //	@Bean
 //	public io.opentracing.Tracer tracer() {

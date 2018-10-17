@@ -92,10 +92,15 @@
 		</dependency>
 
 		<!-- TRACING ZIPKIN-->
+		<!--<dependency>-->
+			<!--<groupId>io.opentracing.contrib</groupId>-->
+			<!--<artifactId>opentracing-spring-cloud-starter</artifactId>-->
+			<!--<version>0.2.0</version>-->
+		<!--</dependency>-->
+
 		<dependency>
 			<groupId>io.opentracing.contrib</groupId>
-			<artifactId>opentracing-spring-cloud-starter</artifactId>
-			<version>0.2.0</version>
+			<artifactId>opentracing-spring-web-autoconfigure</artifactId>
 		</dependency>
 
 		<!--<dependency>-->
@@ -104,10 +109,10 @@
 			<!--<version>0.0.4</version>-->
 		<!--</dependency>-->
 
+		<!-- Jaeger -->
 		<dependency>
-			<groupId>com.uber.jaeger</groupId>
+			<groupId>io.jaegertracing</groupId>
 			<artifactId>jaeger-core</artifactId>
-			<version>0.18.0</version>
 		</dependency>
 
 		<!--<dependency>-->
