@@ -101,6 +101,7 @@
 		<dependency>
 			<groupId>org.springframework.cloud</groupId>
 			<artifactId>spring-cloud-kubernetes-zipkin</artifactId>
+			<version>0.2.0.RELEASE</version>
 		</dependency>
 
 		<dependency>
