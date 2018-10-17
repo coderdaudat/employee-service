@@ -98,11 +98,11 @@
 			<version>0.2.0</version>
 		</dependency>
 
-		<!--<dependency>-->
-			<!--<groupId>io.opentracing.contrib</groupId>-->
-			<!--<artifactId>opentracing-spring-web-autoconfigure</artifactId>-->
-			<!--<version>0.0.4</version>-->
-		<!--</dependency>-->
+		<dependency>
+			<groupId>io.opentracing.contrib</groupId>
+			<artifactId>opentracing-spring-web-autoconfigure</artifactId>
+			<version>0.0.4</version>
+		</dependency>
 
 		<!--<dependency>-->
 			<!--<groupId>com.uber.jaeger</groupId>-->
