@@ -38,6 +38,14 @@ public class DemoApplication {
 	}
 
 //	@Bean
+//	public io.opentracing.Tracer tracer() {
+//		return new Configuration("employee-service", new Configuration.SamplerConfiguration(ProbabilisticSampler.TYPE, 1),
+//						new Configuration.ReporterConfiguration())
+//						.getTracer();
+//	}
+
+
+//	@Bean
 //	public io.opentracing.Tracer jaegerTracer() {
 //		return new Configuration("employee-service", new Configuration.SamplerConfiguration(ProbabilisticSampler.TYPE, 1),
 //				new Configuration.ReporterConfiguration())
