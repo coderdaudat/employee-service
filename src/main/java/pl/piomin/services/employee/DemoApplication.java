@@ -40,8 +40,6 @@ public class DemoApplication {
 //	@Bean
 //	public io.opentracing.Tracer jaegerTracer() {
 //		Configuration config = Configuration.fromEnv();
-//		config = new Configuration("employee-service");
-//		Configuration.SenderConfiguration.Builder builder;
 //
 //		System.out.println("Config_Host: " + config.getReporter().getSenderConfiguration().getAgentHost());
 //		System.out.println("Config_Port: " + config.getReporter().getSenderConfiguration().getAgentPort());
