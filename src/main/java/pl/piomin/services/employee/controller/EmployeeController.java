@@ -29,13 +29,9 @@ public class EmployeeController {
 	@Autowired
     EmployeeRepository repository;
 
-	@Autowired
-	private io.opentracing.Tracer tracer;
-
 	@PostMapping("/")
 	public ResponseEntity<?> add(@RequestBody Employee employee) throws JsonProcessingException {
 		LOGGER.info("Employee add: {}", employee);
-		tracer.activeSpan().setBaggageItem("Employee", "add employee");
 		String json = objectMapper.writeValueAsString(employee);
 		rabbitTemplate.convertAndSend(Constants.MQ_EMPLOYEE_EXCHANGE, Constants.MQ_EMPLOYEE_CREATE, json);
 		return new ResponseEntity<>(HttpStatus.OK.getReasonPhrase(), HttpStatus.OK);
@@ -50,7 +46,6 @@ public class EmployeeController {
 	@GetMapping("/")
 	public Iterable<Employee> findAll() {
 		LOGGER.info("Employee find");
-		tracer.activeSpan().setBaggageItem("Employee", "findAll");
 		return repository.findAll();
 	}
 	
