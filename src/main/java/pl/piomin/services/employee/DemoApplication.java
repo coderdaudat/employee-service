@@ -1,7 +1,5 @@
 package pl.piomin.services.employee;
 
-import com.uber.jaeger.Configuration;
-import com.uber.jaeger.samplers.ProbabilisticSampler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -40,6 +38,12 @@ public class DemoApplication {
 	}
 
 //	@Bean
+//	public io.opentracing.Tracer getTracer() throws ConfigurationException {
+//
+//		return new io.opentracing.Tracer().;
+//	}
+
+//	@Bean
 //	public io.opentracing.Tracer tracer() {
 //		return new Configuration("employee-service", new Configuration.SamplerConfiguration(ProbabilisticSampler.TYPE, 1),
 //						new Configuration.ReporterConfiguration())
@@ -47,12 +51,12 @@ public class DemoApplication {
 //	}
 
 
-	@Bean
-	public io.opentracing.Tracer jaegerTracer() {
-		return new Configuration("employee-service", new Configuration.SamplerConfiguration(ProbabilisticSampler.TYPE, 1),
-				new Configuration.ReporterConfiguration())
-				.getTracer();
-	}
+//	@Bean
+//	public io.opentracing.Tracer jaegerTracer() {
+//		return new Configuration("employee-service", new Configuration.SamplerConfiguration(ProbabilisticSampler.TYPE, 1),
+//				new Configuration.ReporterConfiguration())
+//				.getTracer();
+//	}
 
 //	@Bean
 //	public io.opentracing.Tracer zipkinTracer() {
