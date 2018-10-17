@@ -2,6 +2,14 @@ spring:
   data:
     mongodb:
       uri: mongodb://root:abcd1234@ds133041.mlab.com:33041/tap_stories
+  sleuth:
+      sampler:
+        percentage: 1.0
+
+sample:
+  zipkin:
+    # When enabled=false, traces log to the console. Comment to send to zipkin
+    enabled: true
       
 logging:
   pattern: 
